@@ -2,9 +2,6 @@
   #main.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
 
 
 
@@ -658,62 +655,76 @@ border-radius: var(--radius-8);
 
 
 /* Reviews Section */
-.reviews-section {
-  padding: 20px;
-  
+.reviews {
+
+ padding: 10px;
+  text-align: center;
   font-family: var(--ff-manrope);
 }
 
-.reviews-section .container {
+.reviews .section-title {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
+  margin-bottom: 10px;
+  color: var(--charcoal);
+}
+
+.reviews .overall-rating {
+  color: var(--black-coral);
+  margin-bottom: 40px;
+}
+
+.review-grid {
   display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .review-card {
-  background-color: var(--white);
+  background: var(--white);
   padding: 20px;
   border-radius: var(--radius-10);
-  box-shadow: var(--shadow-2);
-  text-align: center;
+  box-shadow: var(--shadow-1);
+  text-align: left;
   transition: var(--transition-2);
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* ensures everything inside is centered */
 }
 
 .review-card:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow-3);
+  box-shadow: var(--shadow-2);
 }
 
 .review-card img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: var(--radius-circle);
+  object-fit: cover;
   margin-bottom: 15px;
-  object-fit: cover; /* ensures image fits perfectly in circle */
 }
 
 .review-card h3 {
-  font-weight: var(--fw-700);
-  font-size: var(--fs-5);
-  margin-bottom: 10px;
-  color: var(--charcoal);
+  font-size: var(--fs-6);
+  color: var(--violet-blue-crayola);
+  margin-bottom: 5px;
 }
 
 .review-card .stars {
   color: gold;
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: var(--fs-7);
 }
 
 .review-card p {
-  font-size: var(--fs-8);
-  color: var(--charcoal);
-  line-height: 1.4;
+  color: var(--black-coral);
+  font-size: var(--fs-7);
+  margin-bottom: 10px;
 }
 
+.review-card small {
+  display: block;
+  color: var(--cadet-blue-crayola);
+  font-size: var(--fs-8);
+}
 
 
 /*-----------------------------------*\
